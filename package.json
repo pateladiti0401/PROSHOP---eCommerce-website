@@ -15,14 +15,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Murtaza-Vasi/Proshop.git"
+		"url": ""
 	},
-	"author": "Murtaza Vasi",
+	"author": "Aditi",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/Murtaza-Vasi/Proshop/issues"
+		"url": ""
 	},
-	"homepage": "https://github.com/Murtaza-Vasi/Proshop#readme",
+	"homepage": "",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
 		"colors": "^1.4.0",
