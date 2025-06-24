@@ -1,99 +1,117 @@
-# ProShop
+# 🛒 ProShop — eCommerce Platform
 
-This is an eCommerce platform for buying and selling products. Here we are providing a very simple user interface for a good user experience. You can checkout the developed website by going [here](https://proshop-0.herokuapp.com/)
+A full-featured eCommerce website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers a complete shopping experience including a shopping cart, user profiles, product reviews, admin controls, and integrated PayPal payments.
 
-# Features
+---
 
-- Full featured shopping cart
-- Product reviews and ratings
-- Top products carousel
-- Product pagination
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
-- Database seeder (products & users)
+## 🚀 Features
 
-# Technology Stack Used
+- 🛍️ Full-featured **shopping cart**
+- ⭐ Product **reviews and ratings**
+- 🎯 **Top products** carousel on the homepage
+- 📄 **Product pagination** and search functionality
+- 👤 **User profile** with past orders
+- 🔧 Admin features:
+  - Product management
+  - User management
+  - View and mark orders as delivered
+- 💳 Checkout process with **shipping**, **payment method**, and **order summary**
+- 💸 **PayPal** / credit card integration
+- 🗃️ **Database seeder** for test users and products
 
-- Backend:
+---
 
-  1. Node.js
-  1. Express.js
-  1. MongoDB
+## 🧰 Technology Stack
 
-- Frontend:
+### Backend:
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
 
-  1. React.js
-  1. Redux (for state management)
+### Frontend:
+- React.js
+- Redux (for state management)
 
-# Usage
+---
 
-### ES Modules in Node
+## ⚙️ How to Run the Project
 
-We use ECMAScript Modules in the backend in this project. Be sure to have at least Node v14.6+ or you will need to add the "--experimental-modules" flag.
+### 1. Clone the Repository
 
-Also, when importing a file (not a package), be sure to add .js at the end or you will get a "module not found" error
-
-You can also install and setup Babel if you would like
-
-### How to run the project
-
-1. First clone this repo into your local system
-2. Create a .env file and add the following:
-
-```
-NODE_ENV = development
-PORT = 5000
-MONGO_URI = your mongodb uri
-JWT_SECRET = 'abc123'
-PAYPAL_CLIENT_ID = your paypal client id
+```bash
+git clone https://github.com/yourusername/ProShop.git
+cd ProShop
 ```
 
-3. Install the dependencies
+### 2. Setup Environment Variables
 
+Create a `.env` file in the root directory with:
+
+```env
+NODE_ENV=development
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PAYPAL_CLIENT_ID=your_paypal_client_id
 ```
+
+### 3. Install Dependencies
+
+```bash
+# Install root and backend packages
 npm install
+
+# Install frontend packages
 cd frontend
 npm install
+cd ..
 ```
 
-4. Run the code
+### 4. Run the Application
 
-```
-# The following command will run both frontend (port:- 3000) and backend (port:- 5000)
+To run both frontend and backend with one command:
 
+```bash
 npm run dev
+```
 
-# Run backend only
+To run backend only:
+
+```bash
 npm run server
 ```
 
-### Seed Database
+---
 
-You can seed the database with sample products and users by using the following commands
+## 🌱 Seed the Database
 
-```
-# Import data
+```bash
+# Import sample data
 npm run data:import
 
-# Destroy data
+# Destroy all data
 npm run data:destroy
 ```
 
-```
-# Sample user logins
+---
 
-admin@example.com (Admin)
-123456
+## 👥 Sample Users
 
-john@example.com (Customer)
-123456
+| Email              | Password | Role    |
+|-------------------|----------|---------|
+| admin@example.com | 123456   | Admin   |
+| john@example.com  | 123456   | Customer |
+| jane@example.com  | 123456   | Customer |
 
-jane@example.com (Customer)
-123456
-```
+---
+
+## 📄 Notes on ES Modules
+
+This project uses **ECMAScript Modules (ESM)**. Make sure you have Node.js v14.6+ installed. When importing local files, use `.js` extensions to avoid module resolution errors.
+
+---
+
+## 📫 Contact
+
+**Aditi Patel**  
+📧 pateladiti542@gmail.com
